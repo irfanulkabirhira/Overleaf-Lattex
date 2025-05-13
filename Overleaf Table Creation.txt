@@ -1,0 +1,175 @@
+\documentclass[conference]{IEEEtran}
+
+% Packages
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{cuted}
+\usepackage{longtable}
+
+\begin{document}
+
+\twocolumn % Start as usual
+
+% Somewhere in your document where you want the longtable:
+\onecolumn
+
+\begin{longtable}{|c|p{3cm}|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\caption{Hybrid CNN + ViT for Brain Tumor Analysis} \\
+\hline
+\textbf{No.} & \textbf{Authors \& Journal} & \textbf{Country \& Dataset} & \textbf{Methodologies} & \textbf{Summary Findings} & \textbf{Variables (Inputs \& Outputs)} \\ \hline
+\endfirsthead
+
+\hline
+\textbf{No.} & \textbf{Authors \& Journal} & \textbf{Country \& Dataset} & \textbf{Methodologies} & \textbf{Summary Findings} & \textbf{Variables (Inputs \& Outputs)} \\ \hline
+\endhead
+
+\cite{ahmed2024brain} & Ahmed et al., Scientific Reports, 2024 & Bangladesh; BrTMHD-2023, Kaggle MRI  & Hybrid ViT-GRU with XAI (Attention Map, SHAP, LIME) & Achieved 98.97\% accuracy; outperformed existing transfer learning models & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Altin Karagoz et al., arXiv, 2024 & Not specified; BraTS 2023, Figshare, Kaggle & Self-supervised 
+ResViT model combining CNN and ViT & Achieved 98.53\% 
+accuracy on Figshare; effective in limited data scenarios & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Zeineldin and Mathis-Ullrich, arXiv, 2024 & Not specified; BraTS 2023 & Ensemble of Hybrid Transformers and CNNs with transfer learning & Superior segmentation results across diverse tumor types & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Kang et al., arXiv, 2024 & Not specified; BraTS2018, BraTS2020 & CNN Transformer hybrid network handling missing modalities & Outperformed state of-the-art methods in missing modality scenarios & Input: MRI modalities; Output: Tumor segmentation \\ \hline
+
+\cite{} & Mohammadi and Jamshidi, arXiv, 2024 & Not specified; 
+BraTS2020, Brain Tumor MRI Dataset & TrAdaBoost with ensemble of ViT, CapsNet, ResNet-152, VGG16 & High accuracy in tumor vs. non-tumor classification & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Fethi Ghazouani, Pierre Vera, Su Ruan; International Journal of Computer Assisted Radiology and Surgery, 2024 & Not specified; MRI datasets & Swin Transformer with Enhanced Local Self-Attention & Achieved superior segmentation performance compared to existing models & Input: MRI images; Output: Tumor segmentation \\ \hline
+
+\cite{} & Khan et al., Frontiers in Human Neuroscience, 2023 & Not specified; MRI datasets & Hybrid network combining DenseNet169 with ML classifiers & Achieved 95.10\% accuracy in tumor detection & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Islam et al., Sensors, 2020 & Bangladesh; Kaggle 
+MRI brain tumor dataset & ResNet50 with fine-tuning & Achieved 99.2\% test accuracy; better generalization & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Singh et al., Computers in Biology and Medicine, 2022 & India; Br35H dataset & Pre-trained ViT fine-tuned for tumor classification & Achieved 99.1\% accuracy; attention heatmaps for explainability & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Zahid Rasheed, Yong-Kui Ma, Inam Ullah, et al.; Brain Sciences, 2023 & China, Korea, UAE, Pakistan, Saudi Arabia; MRI datasets & Deep CNN model & Achieved high classification accuracy for brain tumors using MRI data & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Md Mahfuz Ahmed, Md Maruf Hossain, Md Rakibul Islam, et al.; Scientific Reports, 2024 & Bangladesh; MRI datasets from BSMMCH and Kaggle & Hybrid Vision Transformer (ViT) and Gated Recurrent Unit (GRU) model with explainable AI & Achieved 98.97\% 
+accuracy using 10-fold cross-validation; outperformed existing diagnostic methods & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Das et al., Frontiers in Neuroinformatics, 2024 & Not specified; MRI datasets & Ensemble learning combining deep learning models & Improved multi classification accuracy & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Ghosh et al., Scientific Reports, 2025 & Not specified; MRI datasets & CNN-SVM hybrid model & Achieved highest 
+accuracy among compared models & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Sharma et al., BMC Medical Imaging, 2024 & Not specified; Clinical datasets & Three distinct CNN models for classification tasks & Achieved up to 99.53\% detection accuracy & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Meryem Altin Karagoz, O. Ufuk Nalbantoglu, Geoffrey C. Fox; arXiv, 2024 & Not specified; BraTS 2023, Figshare, and Kaggle datasets & Residual Vision Transformer (ResViT) with self-supervised learning & Achieved 98.53\% accuracy on Figshare and 98.47\% on Kaggle datasets; demonstrated robustness in handling limited data scenarios & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Vinod Kumar Dhakshnamurthy et al., Eng. Proc., 2024 & India; MRI datasets & Hybrid VGG16 ResNet-50 model & Achieved 99.98\% accuracy, sensitivity, and specificity & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Sudhakar Tummala et al., Current Oncology, 2022 & India, Norway, USA, UK; MRI datasets & Ensemble of Vision Transformers & Demonstrated high accuracy in tumor classification & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Mohammad Ali Labbaf Khaniki et al., arXiv, 2024 & Not specified; MRI datasets & Vision Transformer with Selective Cross Attention and Feature Calibration & Outperformed existing 
+methods in classification accuracy & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Sholingapuram Dharaneswar and B.P. Santosh Kumar, Biomedical Signal Processing and Control, 2025 & Not specified; MRI datasets & Hybrid Vision Transformer and CatBoost with SHAP explainability & Enhanced detection accuracy with interpretability & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & S.U.R. Khan et al., Algorithms, 2024 & Not specified; MRI datasets & Ensemble architecture combining multiple learnable modules & Improved recognition accuracy and robustness & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Huang et al., arXiv, 2025 & Not specified; MRI datasets & Hybrid CNN architecture optimized with oneAPI & Balanced high 
+accuracy with computational efficiency & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & AlTahhan et al., Diagnostics, 2023 & Egypt, Saudi Arabia; MRI datasets & Hybrid CNN model for classification & Achieved improved classification accuracy over traditional CNN models & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Meshram et al., arXiv, 2023 & Not specified; MRI 
+datasets & Swin Transformer architecture for detection & Demonstrated effectiveness in brain tumor detection tasks & Input: MRI images; Output: Tumor detection \\ \hline
+
+\cite{} & Srinivasan S., Francis D., Mathivanan S.K., et al.; BMC Medical Imaging, 2024 & Not specified; MRI datasets & Hybrid deep CNN model with grid search optimization &Achieved high 
+accuracy in multi-class brain tumor classification; demonstrated robustness across different tumor types & Input: MRI images; 
+Output: Tumor classification \\ \hline
+
+\cite{} & Ghosal et al., BMC Medical Imaging, 2024 & Not specified; MRI datasets & Fusion of deep learning with channel-wise attention & Achieved classification accuracies of 99.18\% and 97.24\% on different datasets & Input: MRI images; 
+Output: Tumor classification \\ \hline
+
+\cite{} & Buchade and Kantipudi, IIETA, 2024 & India; MRI datasets & Review of hybrid deep learning methods & Summarized 
+advancements in hybrid models for tumor detection & Input: MRI images; Output: Tumor detection \\ \hline
+
+\cite{} & Das et al., SpringerLink, 2023 & India; MRI datasets & Comparison of various CNN architectures & Provided insights into 
+performance of different CNN variants & Input: MRI images; 
+Output: Tumor classification \\ \hline
+
+\cite{} & Tummala et al., Current Oncology, 2022 & India, Norway, USA, UK; MRI datasets & Ensemble of Vision Transformers & Demonstrated high accuracy in tumor classification & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Khaniki et al., arXiv, 2024 & Not specified; MRI 
+datasets & Vision Transformer with Selective Cross Attention and Feature Calibration & Outperformed existing methods in classification accuracy & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & K. Chandraprabha, L. Ganesan, K. Baskaran; Frontiers in Oncology, 2025 & India; MRI datasets & End-to-end hybrid Vision Transformer (ViT) and Convolutional Neural Network (CNN) architecture & Achieved 97.89\% accuracy in classifying glioma, meningioma, and pituitary tumors; demonstrated high precision and recall metrics across tumor types & Input: MRI images; Output: Tumor classification \\ \hline
+
+\end{longtable}
+
+
+
+%============> 2nd Table <======================
+\begin{longtable}{|c|p{3cm}|p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|}
+\caption{Hybrid CNN + (XAI) for Brain Tumor Analysis} \\
+\hline
+\textbf{No.} & \textbf{Authors \& Journal} & \textbf{Country \& Dataset} & \textbf{Methodologies} & \textbf{Summary Findings} & \textbf{Variables (Inputs \& Outputs)} \\ \hline
+\endfirsthead
+
+\cite{} & Muskan Gupta et al., Journal of Neuroscience Methods, 2024 & Not specified; MRI datasets & EfficientNetB0 with XAI techniques & Enhanced precision in brain tumor detection using MRI imaging & Input: MRI images; Output: Tumor detection \\ \hline
+
+\cite{} & Hosny, K.M., Mohammed, M.A., Salama, R.A., et al., Neural Computing and Applications, 2025 & Not specified; 
+Publicly available dataset & Ensemble of DenseNet121 and InceptionV3 with modified Grad CAM & Achieved highest accuracy compared to existing approaches & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Md Tanvir Rouf Shawon et al., arXiv, 2023 & Not specified; Brain MRI images & Cost-sensitive deep neural networks with XAI & Addressed data imbalance and improved detection accuracy & Input: MRI images; Output: Tumor detection \\ \hline
+
+\cite{} & Francesco Mercaldo et al., Sensors, 2023 & Italy; 3000 MRI images & CNNs with class activation mapping (CAM) & Achieved 97.83\% to 99.67\% accuracy in detection & Input: MRI images; 
+Output: Tumor detection and localisation \\ \hline
+
+\cite{} & Not specified, Applied Sciences, 2023 & Not specified; MRI datasets & CNN-based framework with XAI techniques & Provided explainable results for brain tumor detection & Input: MRI images; Output: Tumor detection \\ \hline
+
+\cite{} & Al Amin et al., arXiv, 2024 & Not specified; 
+Medical imaging datasets & AIoMT framework integrating XAI methods & Enhanced interpretability in medical imaging applications & Input: Medical images; Output: Diagnosis with explanations \\ \hline
+
+\cite{} & Md. Arafat Alam Khandaker et al., arXiv, 2025 & Not specified; Brain MRI datasets & Deep learning models with XAI techniques & Improved diagnostic insights through explainable models & Input: MRI images; Output: Tumor diagnosis \\ \hline
+
+\cite{} & Angona Biswas, Md. Saiful Islam, Journal of Information Systems Engineering and Business Intelligence, 2023 & Bangladesh; 
+Figshare dataset & Deep CNN for feature extraction, SVM for classification & Achieved 96.0\% accuracy, outperforming transfer learning models & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Fatma E. AlTahhan et al., Diagnostics, 2023 & Egypt and Saudi Arabia; MRI datasets & Hybrid CNN architectures & Improved 
+classification accuracy and robustness & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Rasool, M., Ismail, N.A., Boulila, W., et al., Entropy, 2022 & Not specified; MRI datasets & Hybrid deep learning model combining multiple architectures & Enhanced classification performance & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Shaimaa E. Nassar et al., The Journal of Supercomputing, 2024 & Egypt; MRI datasets & Hybrid deep 
+learning technique & Achieved robust classification performance & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Shaimaa E. Nassar et al., The Journal of Supercomputing, 2024 & Egypt; MRI datasets & Hybrid deep 
+learning technique & Achieved robust classification performance & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Anees Abdullah Shafal Ali, Electronic Journal of University of Aden for Basic and Applied Sciences, 2024 & Yemen; Figshare Brain Tumor Dataset & Hybrid model combining DenseNet121 and InceptionV2 & Demonstrated significant improvements in accuracy and generalization & Input: MRI images; Output: Tumor classification \\ \hline
+
+\cite{} & Yonghao Huang, Leiting Chen, Chuan Zhou, arXiv, 2025 & Not specified; BraTS 2023, Figshare, and Kaggle datasets & 3D multi-scale self-attention and cross-attention mechanisms & Improved segmentation performance across multiple datasets & Input: MRI images; Output: Tumor segmentation \\ \hline
+
+\cite{} & Meryem Altin Karagoz, O. Ufuk Nalbantoglu, Geoffrey C. Fox, arXiv, 2024 & Not specified; BraTS 2023, Figshare, and Kaggle datasets & ResViT with self supervised learning & Achieved high accuracy across multiple datasets & Input: MRI images; 
+Output: Tumor classification \\ \hline
+
+\cite{} & Not specified, Multimedia Tools and Applications, 2024 & Not specified; Figshare datase & Diverse ensemble architectures & Enhanced classification accuracy through ensemble methods & Input: MRI images; Output: Tumor classification \\ \hline
+
+\end{longtable}
+
+
+% Bibliography
+\bibliographystyle{plain}
+\bibliography{references.bib}
+
+
+
+
+
+
+
+
+\twocolumn % Resume normal layout
+
+\end{document}
